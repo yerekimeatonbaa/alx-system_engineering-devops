@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays a list of currently running processes
+# This should display, allprocesses for all users, user oriented format, user hierachy
+
+ps -auxf
