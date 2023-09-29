@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Bash script that displays the content of a current directory
+# in a list formant and where only the part of the nameafter the first dash is displayed
+
+
+for file in *; do
+    # Check if the file is a regular file (not a directory) and doesn't start with a dot
+    if [ -f "$file" ] && [[ "$file" != .* ]]; then
+        # Extract the part of the name after the first dash
+        name_after_dash=$(echo "$file" | cut -d'-' -f2-)
+        echo "$name_after_dash"
+    fi
+done
+

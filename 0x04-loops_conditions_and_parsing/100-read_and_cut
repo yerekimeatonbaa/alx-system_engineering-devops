@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Write a bash script that contains the contents of the file /etc/passwd
+# the script should have username | user id | the user home directory path
+
+while IFS=: read -r username _ userid _ homedir _; do
+    echo "Username: $username"
+    echo "User ID: $userid"
+    echo "Home Directory: $homedir"
+done < /etc/passwd
+
