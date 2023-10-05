@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Bash script that configures anubuntu server with specifies requirements
+
+
+if [ "$(id -u)" -ne 0 ]; then
+    echo "This script must be run as root. Please use sudo."
+    exit 1
+fi
+
+cp /etc/hosts /etc/hosts.bak
+
+echo "127.0.0.2 localhost" >> /etc/hosts
+
+echo "8.8.8.8 facebook.com" >> /etc/hosts
+
+echo "Configuration completed. /etc/hosts has been updated."
+
+cat /etc/hosts
+
