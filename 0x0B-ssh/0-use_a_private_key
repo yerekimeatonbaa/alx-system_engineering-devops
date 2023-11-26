@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# SSH connection using single-character flags
+ssh -i ~/.ssh/school ubuntu@157454-web-01
+
