@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-#Description of TCP and UDP ports
-
-sudo lsof -i -P -n

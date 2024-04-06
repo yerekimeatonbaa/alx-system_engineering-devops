@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Update /etc/hosts file to configure localhost and facebook.com resolutions
-sudo sed -i '/localhost/ s/$/ 127.0.0.2/' /etc/hosts
-sudo sed -i '/facebook.com/ s/$/ 8.8.8.8/' /etc/hosts
-
-echo "Configuration complete."
