@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Sets nginx for listening to 80 port
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx start
+kill "$(pgrep 'nginx' | head -1)"
