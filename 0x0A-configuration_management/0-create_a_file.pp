@@ -1,4 +1,4 @@
-#creating a file using pupet
+#creating a file using pupet.
 
 file   { 'school':
 ensure  => 'present',
